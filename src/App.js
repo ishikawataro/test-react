@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Article from './components/Article';
+import InputBox from './components/InputBox';
+import Counter from './components/Counter';
 
-function App() {
+const App=()=> {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +13,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={()=>{alert("OK")}}>
+          ボタン
+        </button>
+        <Article text="石川県総務部" subtext="デジタル推進課" id="de" />
+        <Article text="石川県総務部" subtext="管財課" id="ka" />
+        <InputBox />
+        <Counter text="Up" />
+        <Counter text="Down" />
         <a
           className="App-link"
           href="https://reactjs.org"
